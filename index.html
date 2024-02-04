@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo-removebg.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon restaurant</title>
+    <link rel ="stylesheet" href="style.css" id="themeStyles">
+
+</head>
+
+<body>
+    
+
+    <nav class="navbar">
+
+        <div class="nav-links">
+            <ul>
+                <img src="/images/logo-removebg.png" height="70" width="70">
+                <li><a href="#">ACCEUIL</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#horaire">HORAIRES</a></li>
+                <li><a href="#reservation">RESERVER</a></li>
+            </ul>
+        </div>
+        
+        <img src="images/menu-btn.png" class="hamburger"> 
+
+
+
+        </div>
+        </nav>
+    <body>
+
+        <section class="content">
+
+            <div class="img-slider" >
+ 
+                <marquee behavior="scroll" direction="left" scrollamount="12">
+                    <img src="images/Oahu-Fancy-Restaurants.jpg" alt="">
+                    <img src="https://cdn.discordapp.com/attachments/1153970192674734132/1203742372610052176/LEO.jpg?ex=65d23372&is=65bfbe72&hm=c7ed951e8d8e339db5aa5c7a8be7ea27c26a25a0acd49e4d251985f615836789&" alt="" >
+
+                    <img src="images/chef.jpg" alt="">
+                    <img src="https://cdn.discordapp.com/attachments/1153970192674734132/1203742372610052176/LEO.jpg?ex=65d23372&is=65bfbe72&hm=c7ed951e8d8e339db5aa5c7a8be7ea27c26a25a0acd49e4d251985f615836789&" alt="" >
+                </marquee>
+
+            </div>
+    
+    
+            <section class="menu">
+
+                <h2>MENU</h2>
+                
+                <div class="entree">
+
+                    <h3>NOS ENTREE</h3>
+                    
+                </div>
+
+                <div class="entreeImages">
+                  <img  src="images/menu-btn.png" alt="">
+                </div>
+
+                <div class="plat">
+                    <h3>PLAT</h3>
+                </div>
+                <div class="platImages">
+                  <img  src="images/plat/plat1.jpg" alt="">
+                  <img  src="images/plat/plat2.jpg" alt="">
+                  <img  src="images/plat/plat3.jpg" alt="">
+
+                </div>
+
+                <div class="dessert">
+                    <h3>DESSERT</h3>
+                </div>
+                
+                <div class="dessertImages">
+                  <img  src="images/dessert/dessert1.jpg" alt="">
+                  <img  src="images/dessert/dessert2.jpg" alt=""> <p></p>
+                  <img  src="images/dessert/dessert3.jpg" alt=""> <p> Maquaron</p>
+                </div>
+
+
+            </section>
+
+
+
+            <footer>
+              <div id="horaire">
+                  <table>
+                      <tr>
+                        <th>Jour</th>
+                        <th>Ouverture</th>
+                        <th>Fermeture</th>
+                      </tr>
+                      <tr>
+                        <td>Lundi</td>
+                        <td>10:00</td>
+                        <td>22:00</td>
+                      </tr>
+                      <tr>
+                        <td>Mardi</td>
+                        <td>10:00</td>
+                        <td>22:00</td>
+                      </tr>
+                      <tr>
+                        <td>Mercredi</td>
+                        <td>10:00</td>
+                        <td>22:00</td>
+                      </tr>
+                      <tr>
+                        <td>Jeudi</td>
+                        <td>10:00</td>
+                        <td>22:00</td>
+                      </tr>
+                      <tr>
+                        <td>Vendredi</td>
+                        <td>10:00</td>
+                        <td>23:00</td>
+                      </tr>
+                      <tr>
+                        <td>Samedi</td>
+                        <td>09:00</td>
+                        <td>23:00</td>
+                      </tr>
+                      <tr>
+                        <td>Dimanche</td>
+                        <td>09:00</td>
+                        <td>21:00</td>
+                      </tr>
+                  </table>
+    
+              </div>
+            </footer>
+    
+            <div id="contact">
+                <h2>Contact</h2>:
+                <address>
+                  <p>Adresse : 123, Rue de la patte, Ville De la FRITE</p>
+                  <p>Téléphone : +33 1 23 45 67 89</p>
+              </address>
+
+              <form id="reservation" onsubmit="validateForm(); return false;">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" required>
+        
+                <label for="people">Nombre de personnes :</label>
+                <select id="people" name="people" required>
+                    <option value="1">1 personne</option>
+                    <option value="2">2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">4 personnes</option>
+                </select>
+        
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required>
+        
+                <label for="time">Heure :</label>
+                <input type="time" id="time" name="time" required>
+        
+                <button type="submit" id="reserver">Réserver</button>
+            </form>
+
+            </div>
+    
+        </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+

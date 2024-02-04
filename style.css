@@ -1,0 +1,345 @@
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-image: url("images/restaurant.jpg");
+    background-size: cover;
+    display: flex;
+
+}
+
+
+.content div.img-slider marquee img{
+    width: auto;
+    height: 400px
+
+}
+
+
+
+.navbar {
+    background-color: black;;
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+.navbar a {
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+.navbar a:hover{
+    background-color: rgb(79, 126, 244);
+    color:white;
+    padding:20px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 20px;
+}
+
+.navbar .hamburger {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+
+section.content {
+    margin-top: 100px;
+    width: 100%;
+}
+
+section.menu {
+    text-align: center;
+}
+
+section.menu h3{
+    font-weight: bold;
+}
+ 
+section.menu h2 {
+    background-color: rgba(255, 255, 255, 0.707);
+    padding: 20px;
+}
+
+div.img-slider {
+
+    opacity: 20;
+    height: 400px;
+}
+
+
+div#horaire {
+    display: flex;
+    justify-content: center;
+}
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom:20px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+
+
+.entree {
+    background-color: rgba(145, 182, 149, 0.515);
+    height: 100px;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:chartreuse
+}
+
+
+.entree:hover {
+    transition: 0.8s;
+    height: 200px;
+}
+
+.entreeImages {
+    display:none;
+    transition : all 0.5s ease;
+}
+
+.entreeImages.pop {
+    background-color: rgba(191, 188, 188, 0.598);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.entreeImages.pop img {
+    width: 200px;
+    margin:20px;
+
+}
+
+
+
+.plat {
+    margin: 5%;
+    background-color: rgba(255, 255, 0, 0.67);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(71, 71, 237);
+}
+
+.plat:hover {
+    transition: 0.8s;
+    height: 200px;
+}
+
+.platImages {
+    display:none; 
+}
+
+
+.platImages.pop img {
+
+    width: 200px;
+    margin:20px;
+
+}
+.platImages.pop {
+    background-color: rgba(191, 188, 188, 0.598);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.dessert {
+    margin: 5%;
+    background-color: rgba(203, 139, 214, 0.631);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    transition: 0.8s;
+
+}
+
+.dessert:hover {
+
+    height: 200px;
+}
+
+
+.dessertImages {
+    display:none; 
+}
+
+.dessertImages.pop {
+    background-color: rgba(191, 188, 188, 0.598);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.dessertImages.pop img {
+    width: 200px;
+    margin:20px;
+
+}
+
+div#contact {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 98, 211, 0.597);
+}
+
+div#contact h2 {
+    padding: 20px;
+}
+
+div#contact address{
+
+    padding: 20px;
+}
+
+div#contact address p{
+    font-size: 20px;
+}
+
+
+footer {
+    opacity: 80%;
+    background-color: rgb(255, 255, 255);
+}
+
+form#reservation {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button#reserver {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color:transparent ;
+    }
+    .navbar .hamburger{
+        display: block;
+    }
+
+    .nav-links.pop {
+        margin-left: 0;
+    }
+
+
+    .nav-links{
+
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(8px);
+        margin-left:-100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .nav-links ul li {
+        margin:25px 0;
+    }
+    .navbar .nav-links.pop ul li a {
+        color :red;
+    }
+    .entreeImages {
+        display:none; 
+    }
+    .entreeImages.pop {
+        display: flex;
+    }
+    
+    
+    .platImages {
+        display:none; 
+    }
+    .platImages.pop {
+        display: flex;
+    }
+    
+    
+    .dessertImages {
+        display:none; 
+    }
+    .dessertImages.pop {
+        display: flex;
+    }
+
+
+
+    
+}
+
