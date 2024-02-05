@@ -15,6 +15,32 @@ body {
 
 }
 
+.img-slider {
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.image-slide-infinite {
+    display: inline-block;
+    white-space: nowrap;
+    animation: 15s slide infinite linear;
+}
+
+.image-slide-infinite img {
+    height: 400px;
+}
+
+@keyframes slide {
+    form {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+
 
 .content div.img-slider marquee img{
     width: auto;
@@ -125,6 +151,13 @@ table {
 }
 
 
+
+p.description {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
 .entree:hover {
     transition: 0.8s;
     height: 200px;
@@ -286,10 +319,12 @@ button:hover {
     }
     .navbar .hamburger{
         display: block;
+        z-index: 2;
     }
 
     .nav-links.pop {
         margin-left: 0;
+        z-index: 1;
     }
 
 
@@ -315,6 +350,7 @@ button:hover {
     .navbar .nav-links.pop ul li a {
         color :red;
     }
+
     .entreeImages {
         display:none; 
     }
